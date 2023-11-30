@@ -8,6 +8,6 @@ using namespace std;
 int main(){
 
     // Prints hello world in c++
-    cout << "\n Hello World in C++." << endl;
+    cout << "\n Sudhanshu Barnwal in C++." << endl;
     return 0;
 }
