@@ -9,40 +9,43 @@ using namespace std;
 
 int bookAllocation(int array[], int size, int chatra)
 {
-    int start = 0, end = 0, mid, ans;
+    int start = 0;
+    int end = 0;
+    int ans;
+
     for (int i = 0; i < size; i++)
     {
         start = max(start, array[i]);
-        end += array[i];
+        end = end + array[i];
     }
 
     if (chatra == 1)
         return end;
-
+        
     while (start <= end)
     {
-        mid = start + (end - start) / 2;
-        int bookPages = 0;
-        int student = 1;
+        int mid = start + (end - start) / 2;
+        int pages = 0, studentCount = 1;
         for (int i = 0; i < size; i++)
         {
-            bookPages += array[i];
-            if (bookPages > mid)
+            pages += array[i];
+            if (pages > mid)
             {
-                student++;
-                bookPages = array[i];
+                studentCount++;
+                pages = array[i];
             }
         }
-        if (student <= chatra)
+        if (studentCount <= chatra)
         {
             ans = mid;
             end = mid - 1;
         }
-        else if( student > chatra )
+        else
+        {
             start = mid + 1;
+        }
     }
-
-    return ans  ;
+    return ans;
 }
 
 int main()

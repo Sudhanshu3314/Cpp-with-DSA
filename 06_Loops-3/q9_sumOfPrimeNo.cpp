@@ -14,7 +14,7 @@ int main()
 
     cout << endl;
 
-    for (int i = 2 ; i <= num ; i++ )
+    for (int i = 2; i <= num; i++)
     {
         int twofact = 2;
         for (int j = 1; j <= i; j++)
@@ -36,7 +36,7 @@ int main()
                         twofact_second--;
                     }
                 }
-                if (i + (num - i) == num && twofact_second == 0 )
+                if (i + (num - i) == num && twofact_second == 0)
                 {
                     cout << " -----> " << i << " + " << num - i << " = " << num << endl;
                 }
@@ -44,7 +44,7 @@ int main()
         }
     }
 
-    cout << endl ;
+    cout << endl;
 
     return 0;
 }

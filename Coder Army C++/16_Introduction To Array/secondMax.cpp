@@ -1,8 +1,8 @@
 /*  ----------------------- Hare Krishn  -----------------------
 Programmer = Sudhanshu Barnwal
 Topic = Introduction to Array
-Purpose = second Max Value return
-Date = 08/12/2023   */
+Purpose = Second Max Value return
+Date = 09/12/2023   */
 
 #include <bits/stdc++.h>
 using namespace std;

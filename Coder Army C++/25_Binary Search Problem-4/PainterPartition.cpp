@@ -10,39 +10,40 @@ using namespace std;
 int painterPartition(int wall[], int size, int numPainter)
 {
 
-    int start = 0, end = 0, mid, ans;
+    int start = 0;
+    int end = 0, mid, ans;
 
     for (int i = 0; i < size; i++)
     {
         if (start < wall[i])
             start = wall[i];
-        end += wall[i];
+        end = end + wall[i];
     }
 
     while (start <= end)
     {
         mid = start + (end - start) / 2;
-        int painter = 1, totalWallLength = 0;
-
+        int totalTime = 0, countPainter = 1;
         for (int i = 0; i < size; i++)
         {
-            totalWallLength += wall[i];
-            if (totalWallLength > mid)
+            totalTime += wall[i];
+            if (totalTime > mid)
             {
-                painter++;
-                totalWallLength = wall[i];
+                totalTime = wall[i];
+                countPainter++;
             }
         }
-        if (painter > numPainter)
+        if (countPainter > numPainter)
         {
             start = mid + 1;
         }
-        else if (painter <= numPainter)
+        else
         {
-            end = mid - 1;
             ans = mid;
+            end = mid - 1;
         }
     }
+
     return ans;
 }
 
@@ -66,7 +67,7 @@ int main()
 
     cout << endl;
 
-    int numPainter ; // numPainter = 3;
+    int numPainter; // numPainter = 3;
     cout << "\nEnter no. of painters : ";
     cin >> numPainter;
 

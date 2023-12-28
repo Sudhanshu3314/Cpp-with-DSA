@@ -7,68 +7,68 @@ Date = 09/12/2023   */
 #include <bits/stdc++.h>
 using namespace std;
 
-int minimumWeightCarryByShip(int array[], int size, int days)
+int maximumWeightInShipPackage(int weight[], int size, int days)
 {
 
-    int start = 0, end = 0, mid, ans;
+    int ans;
+    int start = 0, end = 0;
     for (int i = 0; i < size; i++)
     {
-        if (start < array[i])
-            start = array[i];
-        end += array[i];
+        start = max(start, weight[i]);
+        end = end + weight[i];
     }
 
     while (start <= end)
     {
-        mid = start + (end - start) / 2;
-        int countDays = 1;
-        int countWeight = 0;
+        int mid = start + (end - start) / 2;
+        int totalWeight = 0, countDays = 1;
         for (int i = 0; i < size; i++)
         {
-            countWeight += array[i];
-
-            if (countWeight > mid)
+            totalWeight = totalWeight + weight[i];
+            if (totalWeight > mid)
             {
-                countWeight = array[i];
                 countDays++;
+                totalWeight = weight[i];
             }
         }
         if (countDays > days)
-            end = mid - 1;
-        else if (countDays <= days)
         {
-            ans = mid;
             start = mid + 1;
         }
+        else
+        {
+            end = mid - 1;
+            ans = mid;
+        }
     }
-
+    
     return ans;
 }
 
 int main()
 {
 
-    int weight[] = {3, 2, 2, 4, 1, 4};
+    int weight[] = {3, 2, 2, 2, 4, 1, 4};
+
     int size = sizeof(weight) / sizeof(weight[0]);
 
-    cout << "\n Weight of package { ";
+    cout << "\n In Ship Package weights are { ";
 
     for (int i = 0; i < size; i++)
     {
         if (i != size - 1)
             cout << weight[i] << " , ";
         else if (i == size - 1)
-            cout << weight[i] << " } " << endl;
+            cout << weight[i] << " } ";
     }
 
     cout << endl;
+    int days;
+    cout << "\nEnter no. of days : ";
+    cin >> days;
 
-    int numDays;
-    cout << "\nEnter no. of Days : ";
-    cin >> numDays; // numDays = 3
-
-    cout << endl;
-    cout << minimumWeightCarryByShip(weight, size, numDays) << endl;
+    cout << "\nWe need to carry maximum " << maximumWeightInShipPackage(weight, size, days) << " kg "
+         << " weights " << endl;
 
     cout << endl;
     return 0;
