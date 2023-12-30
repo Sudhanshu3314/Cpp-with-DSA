@@ -31,19 +31,26 @@ int main()
 
     for (int i = 0; i < size; i++)
     {
-        cout << i + 1 << " size Sub-array is { ";
-        for (int k = 0; k < size - i; k++)
+        int countSize = i + 1;
+        cout << "\n " << countSize << " size Array is {";
+
+        for (int j = 0; j < size - i; j++)
         {
+
             cout << " { ";
-            for (int j = 0; j <= k; j++)
+            for (int k = j; k < j + countSize; k++)
             {
-                if (j != k)
-                    cout << arr[j] << " , ";
+                if (k != j + countSize - 1)
+                    cout << arr[k] << " , ";
                 else
-                    cout << arr[j] << " } ";
+                    cout << arr[k] << " } ";
+            }
+            if( j != size - i - 1) {
+                cout << "," ;
             }
         }
-        cout << " } " << endl;
+
+        cout << "} " << endl;
     }
 
     cout << endl;
