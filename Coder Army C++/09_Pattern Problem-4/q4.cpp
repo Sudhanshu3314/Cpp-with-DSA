@@ -34,9 +34,9 @@ int main()
 
     for (int i = row; i >= 1; i--)
     {
-        for (int j = row; j < row - i; j--)
+        for (int j = 1; j <= row - i; j++)
         {
-            cout << " " << " ";
+            cout << " ";
         }
         for (int j = 1; j <= i; j++)
         {
