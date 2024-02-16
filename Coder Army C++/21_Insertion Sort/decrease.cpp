@@ -1,30 +1,30 @@
 /*  ----------------------- Hare Krishn  -----------------------
 Programmer = Sudhanshu Barnwal
-Topic = Bubble Sort
-Purpose = Increasing Order
-Date = 03/12/2023   */
+Topic = Insertion Sort
+Purpose = Decreasing Order
+Date = 15/02/2024   */
 
 #include <bits/stdc++.h>
 using namespace std;
 
-void bubbleSort(int array[], int size)
+void InsertionSort(int array[], int size)
 {
     for (int i = 0; i < size - 1; i++)
     {
-
-        bool flag = true;
         cout << endl;
         cout << i + 1 << ") ";
-
-        for (int j = 1; j < size - i; j++)
+        for (int j = i+1; j > 0; j--)
         {
-            if (array[j - 1] > array[j])
+            if (array[j] > array[j - 1])
             {
-                flag = false;
-                swap(array[j - 1], array[j]);
+                swap(array[j], array[j - 1]);
             }
-
-            cout << " -----------> ";
+            else
+            {
+                cout << "There is no swap happen. So, that's why loop this round breaked";
+                break;
+            }
+            cout << " ----> ";
             for (int k = 0; k < size; k++)
             {
                 if (k != size - 1)
@@ -32,50 +32,46 @@ void bubbleSort(int array[], int size)
                 else
                     cout << array[k] << " ";
             }
-            cout << endl;
+            cout << endl ;
         }
-
-        if (flag)
-            break;
     }
 }
 
 int main()
 {
 
+    cout << endl;
     int size;
-    cout << "\nEnter the size of array : ";
+    cout << "Enter the size of array : ";
     cin >> size;
 
     int arr[size];
-    cout << endl;
-
     for (int i = 0; i < size; i++)
     {
         cout << "Enter the value at " << i << " index : ";
         cin >> arr[i];
     }
 
-    cout << "\n Entered Array : { ";
+    cout << "\nEntered Array is { ";
     for (int i = 0; i < size; i++)
     {
         if (i != size - 1)
-            cout << arr[i] << " , ";
-        else if (i == size - 1)
+            cout << arr[i] << ", ";
+        else
             cout << arr[i] << " } ";
     }
 
-    cout << endl;
-    bubbleSort(arr, size);
+    InsertionSort(arr, size);
 
-    cout << "\n\n Sorted Array : { ";
+    cout << "\n\nSorted Array is { ";
     for (int i = 0; i < size; i++)
     {
         if (i != size - 1)
-            cout << arr[i] << " , ";
-        else if (i == size - 1)
+            cout << arr[i] << ", ";
+        else
             cout << arr[i] << " } ";
     }
+
     cout << endl;
     return 0;
 }

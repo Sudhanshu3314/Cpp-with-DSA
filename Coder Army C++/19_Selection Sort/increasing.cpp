@@ -51,7 +51,7 @@ int main()
 
     selectionSort(arr, size);
 
-    cout << "\n Sorted array : { ";
+    cout << "\n Sorted array in Decreasing Order : { ";
     for (int i = 0; i < size; ++i)
     {
         if (i != size - 1)

@@ -1,0 +1,3 @@
+What is Byte addressable?
+
+Byte addressable memory is one in which the data space in a cell is equal to 8 bits or 1 byte. Word addressable memory is one in which the data space in a cell is equal to the word length of the CPU. 

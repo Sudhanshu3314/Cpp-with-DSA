@@ -22,7 +22,7 @@ void Swap( int &x , int &y ){
 int main(){
 
     cout << endl ;
-    int a, b, c;
+    int a, b;
     cout << "\n Enter value of a : ";
     cin >> a; // 4 
     cout << "\n Enter value of b : ";

@@ -14,7 +14,7 @@ void bubbleSort(int array[], int size)
         bool flag = true;
         cout << "\n ------> "
              << "Round" << i + 1 << " : " << endl;
-        ;
+
         for (int j = 1; j < size - i; j++)
         {
             if (array[j] < array[j - 1])
