@@ -9,25 +9,30 @@ using namespace std;
 
 int squareRoot(int n)
 {
-    int start = 1;
-    int end = n / 2;
+    int start = 0;
+    int end = n;
 
-    if (n == 1 || n == 0)
-        return n;
+    int ans;
 
-    int mid;
     while (start <= end)
     {
-        mid = start + (end - start) / 2;
-        if (mid * mid == n)
+        int mid = start + (end - start) / 2;
+        if (mid == n / mid)
+        {
             return mid;
-        else if (mid * mid > n)
+        }
+        else if (mid > n / mid)
+        {
             end = mid - 1;
-        else if (mid * mid < n)
+        }
+        else if (mid < n / mid)
+        {
             start = mid + 1;
+            ans = mid;
+        }
     }
 
-    return mid;
+    return ans;
 }
 
 int main()

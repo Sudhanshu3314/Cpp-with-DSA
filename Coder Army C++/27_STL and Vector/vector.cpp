@@ -4,27 +4,33 @@ Topic = Vector Concept
 Purpose = Vector Properties
 Date = 16/12/2023   */
 
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
 {
 
     // vector create or declare
-    /*     vector<int> vec;
+    /*             
+     vector<int> vec;
     vector<int> vec1(5, 1);
     // size and capacity
     cout << "\nSize of vec : " << vec.size() << endl;
     cout << "Capacity of vec : " << vec.capacity() << endl;
 
     vec.push_back(24); // add elements in vector
-    vec.push_back(67);
+    vec.push_back(67); 
     vec.push_back(75);
     cout << "\nSize of vec : " << vec.size() << endl;
     cout << "Capacity of vec : " << vec.capacity() << endl;
 
     for (int i = 0; i < vec.size(); i++)
         cout << vec[i] << " ";
+
+    for (auto i = vec.begin(); i < vec.end(); i++)
+    {
+        cout << *i << " ";
+    }
 
     cout << endl;
     // Update value in vector
@@ -46,7 +52,7 @@ int main()
     for (int i = 0; i < vec2.size(); i++)
     {
         cout << vec2[i] << " ";
-    }     */
+    }                                                      */
 
     // Delete Value from vector
     /*         vector<int> vec3;
@@ -126,8 +132,18 @@ int main()
     }    */
 
     vector<int> vec4{5, 235, 15, 54, 124};
+
+    cout << "Vector is " ; 
+    for (auto i = vec4.begin(); i < vec4.end(); i++)
+    {
+        cout << *i << " " ;
+    }
+
+    cout << endl;
+    
     // Sort elements of vector in increasing order
     sort(vec4.begin(), vec4.end());
+    sort(vec4.rbegin(), vec4.rend() , greater<int>());
 
     for (int i = 0; i < vec4.size(); i++)
     {
@@ -137,6 +153,7 @@ int main()
 
     // Sort elements of vector in decreasing order
     sort(vec4.rbegin(), vec4.rend()); // 1st trick
+
     for (int i = 0; i < vec4.size(); i++)
     {
         cout << vec4[i] << " ";
@@ -156,14 +173,15 @@ int main()
     // Search elements with index in vector
     // sort
     auto val = find(vec4.begin(), vec4.end(), 54);
-    cout << val - vec4.begin()<< endl;
+    cout << val - vec4.begin() << endl;
 
     cout << endl;
 
     // Homework
 
+    // at
     // count
-    // max 
+    // max
     // min
     // lowerbound
     // upperbound

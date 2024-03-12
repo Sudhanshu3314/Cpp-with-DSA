@@ -7,13 +7,13 @@ Date = 06/12/2023   */
 #include <bits/stdc++.h>
 using namespace std;
 
-void firstAndLastIdx(int array[], int size, int aim)
+vector<int> firstAndLastIdx(int array[], int size, int aim)
 {
-    int first = -1;
-    int last = -1;
+    int first = -1, last = -1;
 
     int start = 0;
     int end = size - 1;
+
     while (start <= end)
     {
         int mid = start + (end - start) / 2;
@@ -22,10 +22,14 @@ void firstAndLastIdx(int array[], int size, int aim)
             first = mid;
             end = mid - 1;
         }
-        else if (array[mid] > aim)
-            end = mid - 1;
         else if (array[mid] < aim)
+        {
             start = mid + 1;
+        }
+        else if (array[mid] > aim)
+        {
+            end = mid - 1;
+        }
     }
 
     start = 0;
@@ -40,13 +44,20 @@ void firstAndLastIdx(int array[], int size, int aim)
             start = mid + 1;
         }
         else if (array[mid] > aim)
+        {
             end = mid - 1;
+        }
         else if (array[mid] < aim)
+        {
             start = mid + 1;
+        }
     }
 
-    cout << "\nFirst : " << first << endl;
-    cout << "\nLast : " << last << endl;
+    vector<int> ans(2);
+    ans[0] = first;
+    ans[1] = last;
+
+    return ans;
 }
 
 int main()
@@ -54,24 +65,27 @@ int main()
 
     int arr[] = {1, 2, 5, 8, 8, 8, 8, 8, 17, 17, 17, 17, 101, 111};
 
-    int size = sizeof(arr) / sizeof(arr[0]);
+    int size = sizeof(arr) / sizeof(int);
 
     cout << "\nArray is { ";
-
     for (int i = 0; i < size; i++)
     {
         if (i != size - 1)
-            cout << arr[i] << " , ";
-        else if (i == size - 1)
+            cout << arr[i] << ", ";
+        else
             cout << arr[i] << " } ";
     }
 
+    cout << endl;
     int target;
-    cout << "\nEnter your target from the above array : ";
+    cout << "\nEnter your target : ";
     cin >> target;
 
-    firstAndLastIdx(arr, size, target);
+    vector<int> res(2);
 
-    cout << endl;
+    res = firstAndLastIdx(arr, size, target);
+
+    cout << "\nFirst Index : " << res[0] << endl;
+    cout << "Last Index : " << res[1] << endl;
     return 0;
 }
