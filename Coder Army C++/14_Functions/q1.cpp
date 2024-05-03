@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  ----------------------- 
+/*  ----------------------- हरे कृष्ण  ----------------------- 
 Programmer = Sudhanshu Barnwal 
 Topic = Functions
 Purpose = Find the cube of a number using a function

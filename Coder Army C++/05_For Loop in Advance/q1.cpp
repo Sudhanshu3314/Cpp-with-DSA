@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  ----------------------- 
+/*  ----------------------- हरे कृष्ण  ----------------------- 
 Programmer = Sudhanshu Barnwal 
 Topic = Loop 
 Purpose = Print number from 280 to 250 with the help of for loop

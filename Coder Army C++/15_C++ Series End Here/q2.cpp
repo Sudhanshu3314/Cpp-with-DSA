@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  ----------------------- 
+/*  ----------------------- हरे कृष्ण  ----------------------- 
 Programmer = Sudhanshu Barnwal 
 Topic = Questions 
 Purpose = Number of 1 bits

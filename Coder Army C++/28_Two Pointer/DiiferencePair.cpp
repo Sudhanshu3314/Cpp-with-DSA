@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  -----------------------
+/*  ----------------------- हरे कृष्ण  -----------------------
 Programmer = Sudhanshu Barnwal
 Topic = Two Pointer
 Purpose = Difference Pair by Two Pointer Approach

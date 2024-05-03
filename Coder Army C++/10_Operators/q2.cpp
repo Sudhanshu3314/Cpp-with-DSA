@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  ----------------------- 
+/*  ----------------------- हरे कृष्ण  ----------------------- 
 Programmer = Sudhanshu Barnwal 
 Topic = Operators 
 Purpose = Even and Positive Number: Write a program that prints “YES” if a given number is both even and positive, otherwise it will print “NO”.

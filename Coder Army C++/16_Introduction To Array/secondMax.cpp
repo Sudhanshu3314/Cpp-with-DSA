@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  -----------------------
+/*  ----------------------- हरे कृष्ण  -----------------------
 Programmer = Sudhanshu Barnwal
 Topic = Introduction to Array
 Purpose = Second Max Value return

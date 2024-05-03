@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  ----------------------- 
+/*  ----------------------- हरे कृष्ण  ----------------------- 
 Programmer = Sudhanshu Barnwal 
 Topic = Start CPP 
 Purpose = Two numbers are given a and b, print a-b

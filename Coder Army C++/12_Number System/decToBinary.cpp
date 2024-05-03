@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  ----------------------- 
+/*  ----------------------- हरे कृष्ण  ----------------------- 
 Programmer = SudhbinaryNumhu Barnwal 
 Topic = Number System 
 Purpose = Convert Number from Decimal Number to Binary Number 

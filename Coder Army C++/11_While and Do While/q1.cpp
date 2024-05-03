@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  -----------------------
+/*  ----------------------- हरे कृष्ण  -----------------------
 Programmer = Sudhanshu Barnwal
 Topic = While and Do while Loop
 Purpose = Take a number n from the user and print all the even numbers between 1 and n(inclusive). Do this using while and do while loop separately.

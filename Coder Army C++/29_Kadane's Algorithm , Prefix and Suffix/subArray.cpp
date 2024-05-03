@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  -----------------------
+/*  ----------------------- हरे कृष्ण  -----------------------
 Programmer = Sudhanshu Barnwal
 Topic = Array and Sub Array
 Purpose = Print Sub-array of Array

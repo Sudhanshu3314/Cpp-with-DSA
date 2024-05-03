@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  -----------------------
+/*  ----------------------- हरे कृष्ण  -----------------------
 Programmer = Sudhanshu Barnwal
 Topic = Loop
 Purpose = Print “India will win the World Cup 2023”, 20 times.

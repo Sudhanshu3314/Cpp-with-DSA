@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  -----------------------
+/*  ----------------------- हरे कृष्ण  -----------------------
 Programmer = Sudhanshu Barnwal
 Topic = Functions
 Purpose = There are three numbers a,b,c. Put the value of a into b, put value of b into c and put value of c into a. Do it using Function.

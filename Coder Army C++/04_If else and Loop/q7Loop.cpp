@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  ----------------------- 
+/*  ----------------------- हरे कृष्ण  ----------------------- 
 Programmer = Sudhanshu Barnwal 
 Topic = Loop 
 Purpose = Print all numbers from 1 to n, which is divisible by 4. Take n as an input from the user.

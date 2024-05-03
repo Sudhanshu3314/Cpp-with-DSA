@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  -----------------------
+/*  ----------------------- हरे कृष्ण  -----------------------
 Programmer = Sudhanshu Barnwal
 Topic = If else
 Purpose = Two numbers are given, print the bigger number, It is given that both numbers can’t be the same.

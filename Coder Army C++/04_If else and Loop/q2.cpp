@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  -----------------------
+/*  ----------------------- हरे कृष्ण  -----------------------
 Programmer = Sudhanshu Barnwal
 Topic = If Else
 Purpose = Age of a person is given, print Adult if his/her age is greater than 18, otherwise print Teenager.

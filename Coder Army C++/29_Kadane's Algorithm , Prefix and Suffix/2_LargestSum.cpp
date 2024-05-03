@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  -----------------------
+/*  ----------------------- हरे कृष्ण  -----------------------
 Programmer = Sudhanshu Barnwal
 Topic = Prefix & Suffix
 Purpose =  ( Kadane's Algorithm Approach ) Largest Sum in Contiguous Sub Array

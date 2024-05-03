@@ -1,7 +1,7 @@
-/*  ----------------------- Hare Krishn  -----------------------
+/*  ----------------------- हरे कृष्ण  -----------------------
 Programmer = Sudhanshu Barnwal
 Topic = Binary Search Problem
-Purpose = Search Target Value in Array
+Purpose = Search Target Value in Rotated Array
 Date = 07/12/2023   */
 
 #include <bits/stdc++.h>

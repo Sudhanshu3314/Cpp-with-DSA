@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  -----------------------
+/*  ----------------------- हरे कृष्ण  -----------------------
 Programmer = Sudhanshu Barnwal
 Topic = Operators
 Purpose = Take three numbers a,b,c from the user, print yes if a is either greater than b or c. Otherwise print NO.

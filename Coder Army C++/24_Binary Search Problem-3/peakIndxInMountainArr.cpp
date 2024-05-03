@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  -----------------------
+/*  ----------------------- हरे कृष्ण  -----------------------
 Programmer = Sudhanshu Barnwal
 Topic = Binary Search Problem
 Purpose = Peak Index in Mountain Array
@@ -14,6 +14,8 @@ int peakIndexInMountainArray(int array[], int size)
     int end = size - 1;
     while (start <= end)
     {
+        int mid = start + (end-start) / 2;
+        // 1 6 4 3 2 
         int mid = end + (start-end) / 2;
         if (array[mid] > array[mid - 1] && array[mid] > array[mid + 1])
             return mid;

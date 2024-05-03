@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  ----------------------- 
+/*  ----------------------- हरे कृष्ण  ----------------------- 
 Programmer = Sudhanshu Barnwal 
 Topic = Loop 
 Purpose = Print 6*3 in output, don’t print 18, just 6*3 should be in the output screen.

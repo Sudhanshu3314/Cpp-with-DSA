@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  -----------------------
+/*  ----------------------- हरे कृष्ण  -----------------------
 Programmer = Sudhanshu Barnwal
 Topic = Binary Search Problem
 Purpose = Kth Missing Positive Integer
@@ -15,7 +15,7 @@ int kthMissingPositiveInteger(int array[], int size, int key)
     while (start <= end)
     {
         int mid = start + (end - start) / 2;
-        if (array[mid] - mid - 1 < key)
+        if (array[mid] - mid - 1 <= key)
             start = mid + 1;
         else
         {

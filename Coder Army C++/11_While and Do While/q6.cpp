@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  ----------------------- 
+/*  ----------------------- हरे कृष्ण  ----------------------- 
 Programmer = Sudhanshu Barnwal 
 Topic = While and Do While loop 
 Purpose = Give a number n, find if it is prime or not, use a while loop and break here to solve it.
@@ -26,9 +26,6 @@ int main(){
         i++;
     }
     cout << n << " is Prime Number"<<endl;
-    
-
-    
 
     cout << endl ;
     return 0;

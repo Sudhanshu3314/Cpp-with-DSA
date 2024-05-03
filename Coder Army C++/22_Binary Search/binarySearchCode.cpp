@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  -----------------------
+/*  ----------------------- हरे कृष्ण  -----------------------
 Programmer = Sudhanshu Barnwal
 Topic = Binary Search Problem
 Purpose = Linear Search Using Binary Search for reducing time complexity of code from O(N) to O(LogN)

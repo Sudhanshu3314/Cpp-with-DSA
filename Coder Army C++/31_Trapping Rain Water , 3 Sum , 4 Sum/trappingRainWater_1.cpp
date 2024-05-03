@@ -1,4 +1,4 @@
-/*  ----------------------- Hare Krishn  -----------------------
+/*  ----------------------- हरे कृष्ण  -----------------------
 Programmer = Sudhanshu Barnwal
 Topic = Trapping Rain Water
 Purpose = Approach of ( Auxillary Space Complexity : O(N) , Time Complexity : O(N) );
