@@ -1,7 +1,7 @@
 /*  ----------------------- हरे कृष्ण  -----------------------
 Programmer = Sudhanshu Barnwal
 Topic = Selection Sort
-Purpose = Selection Sort Algorithm to sort the array of char in ascending order.
+Purpose = Bubble Sort Algorithm to sort the array of char in ascending order.
 
 Date = 21/03/2024   */
 
@@ -19,28 +19,22 @@ int main()
     {
         cout << ch[i] << " ";
     }
-    cout << endl ;
 
     for (int i = 0; i < size - 1; i++)
     {
-        int index = i;
-        for (int j = i + 1; j < size; j++)
+        bool flag = true;
+        for (int j = 1; j < size - i; j++)
         {
-            if (ch[index] > ch[j])
-                index = j;
+            if (ch[j - 1] > ch[j])
+            {
+                swap(ch[j - 1], ch[j]);
+                flag = false;
+            }
         }
-        cout << endl;
-        cout << i + 1 << ") ";
-
-        for (int k = 0; k < size; k++)
-        {
-            cout << ch[k] << " ";
-        }
-
-        swap(ch[index], ch[i]);
+        if (flag)
+            break;
     }
 
-    cout << endl;
     cout << endl;
 
     for (int i = 0; i < size; i++)

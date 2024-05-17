@@ -36,7 +36,6 @@ int main()
 
         for (int j = 0; j < size - i; j++)
         {
-
             cout << " { ";
             for (int k = j; k < j + countSize; k++)
             {
@@ -45,8 +44,9 @@ int main()
                 else
                     cout << arr[k] << " } ";
             }
-            if( j != size - i - 1) {
-                cout << "," ;
+            if (j != size - i - 1)
+            {
+                cout << ",";
             }
         }
 

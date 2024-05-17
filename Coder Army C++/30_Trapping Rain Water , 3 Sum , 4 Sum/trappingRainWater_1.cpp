@@ -16,14 +16,21 @@ int main()
     vector<int> leftMax(size);
     vector<int> rightMax(size);
 
-    leftMax[0] = 0;
-    rightMax[size - 1] = 0;
+    int max = INT_MIN;
 
-    for (int i = 1; i < size; i++)
-        leftMax[i] = max(leftMax[i - 1], height[i - 1]);
+    for (int i = 0; i < size; i++)
+    {
+        max = (height[i] > max) ? height[i] : max;
+        leftMax[i] = max;
+    }
 
-    for (int i = size - 2; i >= 0; i--)
-        rightMax[i] = max(rightMax[i + 1], height[i + 1]);
+    max = INT_MIN;
+
+    for (int i = size - 1; i >= 0; i--)
+    {
+        max = (height[i] > max) ? height[i] : max;
+        rightMax[i] = max;
+    }
 
     cout << "\nLeftmax is ";
     for (int i = 0; i < size; i++)
@@ -43,18 +50,14 @@ int main()
     {
         cout << height[i] << " ";
     }
-    
-    cout << endl;
+
     cout << endl;
     int trapWater = 0;
 
-    for (int j = 1; j < size - 1; j++)
+    for (int j = 0; j < size; j++)
     {
-        int minHeight = min(leftMax[j], rightMax[j]);
-        if (minHeight > height[j])
-        {
-            trapWater = trapWater + (minHeight - height[j]);
-        }
+        if (min(leftMax[j], rightMax[j]) > height[j])
+            trapWater = trapWater + (min(leftMax[j], rightMax[j]) - height[j]);
     }
 
     cout << trapWater << endl;
