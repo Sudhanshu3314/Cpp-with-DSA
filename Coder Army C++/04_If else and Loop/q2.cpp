@@ -1,29 +1,22 @@
-/*  ----------------------- हरे कृष्ण  -----------------------
-Programmer = Sudhanshu Barnwal
-Topic = If Else
+/*  ----------------------- हरे कृष्ण  ----------------------- 
+Programmer = Sudhanshu Barnwal 
+Topic = If Else 
 Purpose = Age of a person is given, print Adult if his/her age is greater than 18, otherwise print Teenager.
+Date = 19/05/2026 */
 
-Date = 06/01/2024   */
-
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-int main()
-{
+int main(){
 
+    cout << endl ;
     int age;
-    cout << "\nEnter age : ";
+    cout << "\nEnter person age : ";
     cin >> age;
 
-    cout << endl;
-    if (age > 18)
-    {
-        cout << "\nAdult" << endl;
-    }
-    else
-    {
-        cout << "\nTeenager" << endl;
-    }
-    cout << endl;
+    cout << "\nPerson is " << (( age > 18 ) ? "adult" : "teenager") << " by their age" << endl;
+    
+
+    cout << endl ;
     return 0;
 }
